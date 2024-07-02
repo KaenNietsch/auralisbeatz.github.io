@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+
+    <header>
+        <nav class="toolbar">
+            <img class="logo" src="des/Logo.png">
+            <div class="box">
+                <input type="text" placeholder="Search...">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <div class="user-menu">
+                <!-- Oturum açıldıysa -->
+                <div class="dropdown">
+                    <img id="profile-pic" class="profile-pic" alt="Profil Resmi">
+                    <button class="dropbtn">Profile</button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Cart</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Log Out</a>
+                    </div>
+                </div>
+                <!-- Oturum açılmadıysa -->
+                <div class="auth-buttons">
+                    <button class="login-btn">LogIn</button>
+                    <button class="signup-btn">Register</button>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Beats</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="account.js"></script>
+    <script src="detail.js"></script>
+
+    <div class="container">
+        <div class="listProduct">
+
+        </div>
+    </div>
+
+    
+
+    <!--<script>
+        let products = null;
+
+        // JSON dosyasından verileri al
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+            });
+        
+        function addDataToHTML() {
+            let listProductHTML = document.querySelector('.listProduct');
+        
+            // HTML'deki mevcut ürünleri temizle
+            listProductHTML.innerHTML = '';
+        
+            // Verileri ekleyin
+            if (products != null) {
+                products.forEach(product => {
+                    let newProduct = document.createElement('a');
+                    newProduct.href = '/detail.html?id=' + product.id;
+                    newProduct.classList.add('item');
+                    newProduct.innerHTML = `
+                        <div class="item-content">
+                            <img src="${product.image}" alt="">
+                            <h2>${product.name}</h2>
+                            <h2 class="prop">${' ' + product.key + ' ' + product.bpm + 'BPM'}</h2>
+                            <div class="price">$${product.price}</div>
+                            <div class=process>
+
+                                <button class="purchase">Purchase</button>
+                                <button class="add">Add To Cart</button>
+
+
+                            </div>
+                            <div class="desc">${product.desc}</div>
+                        </div>
+                    `;
+                        
+                    // Ürün üzerine hover olduğunda arka plan resmini değiştirme
+                    newProduct.addEventListener('mouseenter', function() {
+                        newProduct.style.transition = 'background-image 1s';
+                        newProduct.style.backgroundImage = `url("${product.image}")`;
+                        newProduct.querySelector('h2').style.backgroundColor = '#ff6347';
+                        newProduct.querySelector('h2').style.borderRadius = '5px';
+                    });
+        
+                    newProduct.addEventListener('mouseleave', function() {
+                        newProduct.style.transition = 'background-image 0.5s';
+                        newProduct.style.backgroundImage = 'none';
+                        newProduct.querySelector('h2').style.transition = 'background-color 1s'
+                        newProduct.querySelector('h2').style.backgroundColor = 'transparent';
+                    });
+                    
+                    listProductHTML.appendChild(newProduct);
+                });
+            }
+        }
+    </script> -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="beats.js"></script>
+    </body>       

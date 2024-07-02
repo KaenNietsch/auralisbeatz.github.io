@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name":" HAVANA SUMMER TYPE BEAT",
+        "price": 30,
+        "image": "img/1.jpg",
+        "bg":"img/bg1.jpg",
+        "description": "Havana is a sizzling summer beat that encapsulates the vibrant spirit of the city it's named after. Infused with Latin rhythms and sultry melodies, this track beckons with its infectious energy and passion. The pulsating beats and lively instrumentation transport listeners to a bustling street in Havana, where the air is thick with rhythm and heat. With its lively piano chords, rhythmic percussion, and smooth brass accents, Havana embodies the essence of a lively fiesta under the Caribbean sun. Perfect for dance floors, beach parties, or any occasion where celebration meets summer, this beat is a joyful homage to the cultural heartbeat of Havana.",
+        "desc" : "Havana is a sizzling summer beat that encapsulates the vibrant spirit of the city it's named after.",
+        "type" : "_beat",
+        "tags" :"#Summer #Happy #Afro",
+        "key" : "C Major",
+        "bpm" : "94",
+        "sound" : "beats/1.wav",
+        "artist":"Quadra"
+    },
+    {
+        "id": 2,
+        "name":" ALONE SAD TYPE BEAT",
+        "price": 30,
+        "image": "img/2.jpg",
+        "bg":"img/bg2.jpg",
+        "description": "Alone is a melancholic beat that resonates with the solitude and introspection of being on one's own. With its haunting melody and minimalist arrangement, this track captures the raw emotion of solitude. The gentle piano keys evoke a sense of longing and reflection, while the subtle beat provides a steady rhythm, mirroring the heartbeat amidst the silence. Alone invites listeners into a contemplative space where emotions are felt deeply, offering solace in its simplicity and sincerity. Perfect for moments of introspection or scenes depicting emotional solitude, this beat speaks to the universal experience of being alone with one's thoughts.",
+        "desc" : "Alone is a melancholic beat that resonates with the solitude and introspection of being on one's own.",
+        "type" : "_beat",
+        "tags" :"#Emotional, #Sad, #Trap",
+        "key" : "C Major",
+        "bpm" : "130",
+        "sound" : "beats/2.wav",
+        "artist":"Quadra"
+    },
+    {
+        "id": 3,
+        "name":"LEAVE ME LOVE TYPE BEAT",
+        "price": 30,
+        "image": "img/3.jpg",
+        "bg":"img/bg3.jpg",
+        "description": "This Leave Me Love Type Beat offers an emotional and atmospheric journey. With a slow, contemplative tempo, it blends intense bass and delicate melodies, perfect for writing lyrics or relaxing. Let the music touch your heart and complement your emotional moments.",
+        "desc" : "This Leave Me Love Type Beat offers an emotional and atmospheric journey.",
+        "type" : "_beat",
+        "tags" :"#Emotional, #Sad, #Trap, #Love",
+        "key" : "A Minor",
+        "bpm" : "130",
+        "sound" : "beats/3.mp3",
+        "artist":"Quadra"
+    }
+
+]

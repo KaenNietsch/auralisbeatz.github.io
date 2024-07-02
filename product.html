@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="beat.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="beat.js"></script>
+<link rel="stylesheet" href="footer.css">
+<title>Beat</title>
+</head>
+<body>
+
+  <header>
+    <nav class="toolbar">
+        <img class="logo" src="des/Logo.png">
+        <div class="box">
+            <input type="text" placeholder="Search...">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <div class="user-menu">
+            <!-- Oturum açıldıysa -->
+            <div class="dropdown">
+                <img id="profile-pic" class="profile-pic" alt="Profil Resmi">
+                <button class="dropbtn">Profile</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Cart</a>
+                    <a href="#">Favorites</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+            <!-- Oturum açılmadıysa -->
+            <div class="auth-buttons">
+                <button class="login-btn">LogIn</button>
+                <button class="signup-btn">Register</button>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Beats</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<script src="account.js"></script>
+
+<script src="detail.js"></script>
+
+
+<h2 id="name">Quadra - Alone SAD TYPE BEAT</h2>
+<div id="mp3_player">
+    <img id="cover-art" src="img/2.jpg">
+    <h2 id="price">$30</h2>
+    <h2 id="description"></h2>
+    <div id="audio_box"></div>
+    <canvas id="analyser_render"></canvas>
+    <button id="play_pause_btn">▶</button>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer{
+        margin-top: 50%;
+    }
+</style>
+
+</body>
+
+</html>
